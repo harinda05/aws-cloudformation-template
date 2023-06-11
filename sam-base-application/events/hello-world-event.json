@@ -1,9 +1,11 @@
 {
-  "body": "{\"message\": \"hello world\"}",
+  "body": "{\"message\":\"hello Harinda\"}",
   "resource": "/{proxy+}",
   "path": "/path/to/resource",
   "httpMethod": "POST",
   "isBase64Encoded": false,
+  "multiValueHeaders": {},
+  "multiValueQueryStringParameters": {},
   "queryStringParameters": {
     "foo": "bar"
   },
@@ -41,22 +43,33 @@
     "requestTime": "09/Apr/2015:12:34:56 +0000",
     "requestTimeEpoch": 1428582896000,
     "identity": {
-      "cognitoIdentityPoolId": null,
-      "accountId": null,
-      "cognitoIdentityId": null,
-      "caller": null,
-      "accessKey": null,
+      "accessKey": "",
+      "accountId": "",
+      "apiKey": "",
+      "apiKeyId": "",
+      "caller": "",
+      "clientCert": {
+          "clientCertPem": "",
+          "issuerDN": "",
+          "serialNumber": "",
+          "subjectDN": "",
+          "validity": { "notAfter": "", "notBefore": "" }
+      },
+      "cognitoIdentityId": "",
+      "cognitoIdentityPoolId": "",
+      "principalOrgId": "",
       "sourceIp": "127.0.0.1",
-      "cognitoAuthenticationType": null,
-      "cognitoAuthenticationProvider": null,
-      "userArn": null,
+      "cognitoAuthenticationType": "",
+      "cognitoAuthenticationProvider": "",
+      "userArn": "",
       "userAgent": "Custom User Agent String",
-      "user": null
+      "user": ""
     },
     "path": "/prod/path/to/resource",
     "resourcePath": "/{proxy+}",
     "httpMethod": "POST",
     "apiId": "1234567890",
-    "protocol": "HTTP/1.1"
+    "protocol": "HTTP/1.1",
+    "authorizer": {}
   }
 }
